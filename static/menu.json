@@ -1,0 +1,43 @@
+[
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "About",
+      "url": "/about"
+    },
+    {
+      "label": "Services",
+      "url": "/services",
+      "submenu": [
+        {
+          "label": "Web Development",
+          "url": "/web-dev"
+        },
+        {
+          "label": "Design",
+          "url": "/design"
+        }
+      ]
+    },
+    {
+      "label": "Contact",
+      "url": "/contact"
+    },
+    {
+      "label": "BAU",
+      "url": "/contact",
+      "submenu": [
+          {
+            "label": "Tools",3
+            "url": "/tools"
+          },
+          {
+            "label": "Documnetation",
+            "url": "/docs"
+          }
+      ]
+  
+    }
+  ]
