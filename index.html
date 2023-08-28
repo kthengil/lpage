@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>USS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="static/colors.css">
+<link rel="stylesheet" href="static/styles.css">
+
+</head>
+<body>
+
+    <div class="glass">
+            <img class="logo" src="static/word_logo.svg"> 
+            <img class="pagetitle" src="static/uss.svg">
+    </div>
+    
+    <div id="navcontainer">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">SQAD1</a>
+                <ul>
+                    <li><a href="#">LINK1</a></li>
+                    <li><a href="#">LINK2</a></li>
+                    <li><a href="#">LINK3</a></li>
+                </ul>        
+                </li>
+                <li><a href="#">SQAD2</a>
+     
+                    <ul>
+                    <li><a href="#">LINK1</a></li>
+                    <li><a href="#">LINK2</a></li>
+                    <li><a href="#">Sub Menu</a>
+     
+                        <ul>
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a>
+                            
+                            <ul>
+                                <li><a href="#">Link4</a></li>
+                                <li><a href="#">Link5</a></li>
+                                <li><a href="#">Link6</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">SQAD3</a>
+                 <ul>
+                    <li><a href="#">Link1</a></li>
+                    <li><a href="#">Link1</a></li>
+                    <li><a href="#">Link1</a></li>
+                </ul>  
+                </li>
+                <li><a href="#">SQAD4</a>
+     
+                    <ul>
+                    <li><a href="#">LINK1</a></li>
+                    <li><a href="#">Sub Menu</a>
+     
+                        <ul>
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a>
+                            
+                            <ul>
+                                <li><a href="#">Link4</a></li>
+                                <li><a href="#">Link5</a></li>
+                                <li><a href="#">Link6</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    
+                </ul>
+                </li>           
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+     
+    </div>
+
+
+
+   
+    <img src="static/moon.svg" id="toggleImage" class="modeswitch" onclick="modeSwitch()">   
+    <script>
+        function modeSwitch() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+           var imageElement = document.getElementById("toggleImage");
+            
+            if (imageElement.getAttribute("src") === "static/sun.svg") {
+                imageElement.setAttribute("src", "static/moon.svg");
+            } else {
+                imageElement.setAttribute("src", "static/sun.svg");
+            }
+        }
+    </script>
+ <div class="toolbox">
+    <center>
+        <a href="#"  ><button class="toolbutton" ><img src="static/360.svg"><br> Tool Name One</button></a>
+        <a href="#"  ><button class="toolbutton"><img  src="static/bolt.svg"><br> Tool Name Name</button></a>
+        <a href="#"  ><button class="toolbutton"><img src="static/tools.svg"><br> Tool Name Five</button></a>
+        <a href="#"  ><button class="toolbutton"><img  src="static/tools.svg"><br> Tool Name Name</button></a>
+        <a href="#"  ><button class="toolbutton"><img  src="static/rocket.svg"><br> Tool Name Name</button></a>
+        <a href="#"  ><button class="toolbutton" ><img src="static/360.svg"><br> Tool Name One</button></a>
+        <a href="#"  ><button class="toolbutton"><img  src="static/bolt.svg"><br> Tool Name Name</button></a>
+        <a href="#"  ><button class="toolbutton"><img src="static/tools.svg"><br> Tool Name Five</button></a>
+        <a href="#"  ><button class="toolbutton" ><img src="static/360.svg"><br> Tool Name One</button></a>
+        <a href="#"  ><button class="toolbutton"><img  src="static/bolt.svg"><br> Tool Name Name</button></a>
+        <a href="#"  ><button class="toolbutton"><img src="static/tools.svg"><br> Tool Name Five</button></a>
+        <a href="#"  ><button class="toolbutton"><img  src="static/tools.svg"><br> Tool Name Name</button></a>
+        <a href="#"  ><button class="toolbutton"><img  src="static/rocket.svg"><br> Tool Name Name</button></a>
+        <a href="#"  ><button class="toolbutton" ><img src="static/360.svg"><br> Tool Name One</button></a>
+        <a href="#"  ><button class="toolbutton"><img  src="static/bolt.svg"><br> Tool Name Name</button></a>
+        
+    </center>
+</div>
+    
+    
+
+    <div class="container">
+        <div class="t-column">
+           
+        </div>
+
+
+        <div class="m-column">
+            <button class="chat-button" id="open-chat">
+                <img src="static/chat.svg">
+            </button>
+
+            <div class="image-slideshow">
+                <div class="image fade">
+                    <img class="slide" src="static/slide1.png"></imag>
+                </div>        
+                <div class="image fade">
+                    <img class="slide" src="static/slide2.png"></imag>
+                </div>        
+                <div class="image fade">
+                    <img class="slide" src="static/slide3.png"></imag>
+                </div>
+                <div class="image fade">
+                    <img class="slide" src="static/slide4.png"></imag>
+                </div>
+              </div>
+               <script>
+                    let index = 0;
+                    displayImages();
+                    function displayImages() {
+                    let i;
+                    const images = document.getElementsByClassName("image");
+                    for (i = 0; i < images.length; i++) {
+                        images[i].style.display = "none";
+                    }
+                    index++;
+                    if (index > images.length) {
+                        index = 1;
+                    }
+                    images[index-1].style.display = "block";
+                    setTimeout(displayImages, 6000); 
+                    }
+               </script>
+
+
+
+            
+                <br>
+                <br>
+                <center>
+                <div class="promo-area>">
+                    <div class="promo-container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <img src="static/rocket.svg">
+                    </div>
+                    <div class="promo-container">
+                        <img src="static/tools.svg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                    <div class="promo-container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <img src="static/speaker.svg">
+                    </div>
+                    <div class="promo-container">
+                        <img src="static/360.svg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                    <div class="promo-container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <img src="static/bulb.svg">
+                    </div>
+                    <div class="promo-container">
+                        <img src="static/bolt.svg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+
+                </div>
+               </center>
+        </div>
+
+        <div class="s-column">
+            <h1>Notices</h1>
+
+            <div class="notice">
+                <h1>Notice 1</h1>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="notice">
+                <h1>Notice 2</h1>
+                <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+            </div>
+            <div class="notice">
+                <h1>Notice 3</h1>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="notice">
+                <h1>Notice 4</h1>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="notice">
+                <h1>Notice 5</h1>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="chat-container" id="chat-window">
+                <button class="close-button" id="close-chat">&times;</button>
+                <div class="chat-header">Unix Buddy </div>
+                <div class="chat-messages" id="chat-messages">
+
+                </div>
+                <form id="user-input">
+                    <input type="text" id="user-message" placeholder="Type your message...">
+                    <button id="send-btn" type="submit">Send</button>
+                </form>
+
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                var openChatButton = document.getElementById("open-chat");
+                var closeChatButton = document.getElementById("close-chat");
+                var chatWindow = document.getElementById("chat-window");
+                var sendButton = document.getElementById("send-btn");
+
+                if (openChatButton && closeChatButton && chatWindow && sendButton) {
+                    openChatButton.addEventListener("click", function () {
+                    chatWindow.style.display = "block";
+                    openChatButton.style.display = "none";
+                });
+
+                closeChatButton.addEventListener("click", function () {
+                    chatWindow.style.display = "none";
+                    openChatButton.style.display = "block";
+                });
+
+                sendButton.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent form submission
+                    event.stopPropagation(); // Prevent event from propagating
+
+                    // Handle sending chat message logic here
+
+                    // Clear input field after sending message
+                    document.getElementById("user-message").value = "";
+                });
+                }
+                });
+
+            </script>
+        </div>
+     
+    </div>
+
+
+   
+
+
+</body>
+</html>   
